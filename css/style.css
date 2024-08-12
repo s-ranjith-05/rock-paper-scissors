@@ -1,0 +1,248 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(85, 85, 190);
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    border: 6px solid white;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-left: 15px;
+    border-radius: 10px;
+    margin-right: 15px;
+    padding-left:20px ;
+    padding-right: 20px;
+    color: white;
+}
+.score-box{
+    background-color: white;
+    padding: 15px;
+    color: rgb(85, 85, 190);
+    border-radius: 10px;
+}
+.play-icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+}
+.play-icons img{
+    width: 200px;
+    height: 200px;   
+}
+.play-icon-btn{
+    border:5px solid white;
+    background: transparent;
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+}
+.rules-button button{
+    position: fixed;
+    top: 650px;
+    left: 1350px;
+    padding: 10px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.pop-up-box-container{
+    background-color:rgb(85, 85, 190);
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index:1;
+    display: none;
+}
+.pop-up-box{
+    margin: 150px auto;
+    width: 600px;
+    height: 500px;
+    background-color:white;
+    color: rgb(85, 85, 190);
+    border-radius:15px ;
+}
+.msg-title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+.msg-title p{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.msg-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.msg-content button{
+    border: 5px solid black;
+    background: transparent;
+    padding:20px;
+    border-radius: 50%;
+
+}
+.msg-content img{
+    width: 200px;
+    height: 200px; 
+}
+.msg-result .result{
+    font-size: 1.8em;
+    font-weight:bold ;
+    text-align: center; 
+}
+.play-again button{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.4em;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(85, 85, 190);
+}
+.rules{
+    background-color:rgb(85, 85, 190);
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index:1;
+    display: none;
+}
+.rules-box{
+    margin: 150px auto;
+    width: 600px;
+    height: fit-content;
+    background-color:white;
+    color: rgb(85, 85, 190);
+    border-radius:15px ;
+    padding: 20px;
+}
+.Exit-btn{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.4em;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(85, 85, 190);
+}
+
+@media (max-device-width:812px){
+    .title {
+        margin-top: 15px;
+        border: 4px solid white;
+        font-size: 1.5em;
+        color: white;
+    }
+    .play-icons {
+        margin-top: 20px;
+    }
+    .play-icons img {
+        width: 100px;
+        height: 100px;
+    }
+    .rules-button button{
+        position:fixed;
+        top:320px;
+        left:710px;
+        padding: 10px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        
+    }
+    .pop-up-box {
+        margin: 10px auto;
+        width: 300px;
+        height: 350px;
+    }
+    .msg-content img {
+        width: 50px;
+        height: 50px;
+    }
+    .msg-title p {
+        font-size: 1.4em;
+    }
+    .rules{
+        z-index:1;
+    }
+    .rules-box {
+        margin: 5px auto;
+        width: 750px;
+        height: fit-content;
+        background-color: white;
+        color: rgb(85, 85, 190);
+        border-radius: 15px;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.6em;
+    }
+    
+}
+
+@media (max-width:477px){
+    .play-icons img {
+        width: 100px;
+        height: 100px;
+    }
+    .rules-button button{
+        position:fixed;
+        top:740px;
+        left:270px;
+        padding: 10px;
+        font-size: 1.5em;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .pop-up-box {
+        margin: 230px auto;
+        width: 300px;
+        height: 350px;
+    }
+    .msg-content img {
+        width: 50px;
+        height: 50px;
+    }
+    .msg-title p {
+        font-size: 1.4em;
+    }
+    .rules-box {
+        margin: 30px auto;
+        width: 300px;
+        height: fit-content;
+        background-color: white;
+        color: rgb(85, 85, 190);
+        border-radius: 15px;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.6em;
+    }
+    
+}
+

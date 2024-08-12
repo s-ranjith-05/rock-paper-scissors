@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <p>Rock Paper Scissors</p>
+      <p class="score-box">Score: <span class="score-card">0</span></p>
+    </div>
+    <div class="play-icons">
+      <button class="play-icon-btn" onclick="result('Rock'); popup();">
+        <img src="images/Rock.png" alt="" />
+      </button>
+      <button class="play-icon-btn" onclick="result('Paper'); popup();">
+        <img src="images/Paper.png" alt="" />
+      </button>
+      <button class="play-icon-btn" onclick="result('Scissors'); popup();">
+        <img src="images/Scissors.png" alt="" />
+      </button>
+    </div>
+    <div class="rules-button">
+      <button onclick="rulespopup()">Rules</button>
+    </div>
+    <div class="pop-up-box-container">
+      <div class="pop-up-box">
+        <div class="pop-up-message">
+          <div class="msg-title">
+            <p>YOU</p>
+            <p>COMPUTER</p>
+          </div>
+          <div class="msg-content"></div>
+          <div class="msg-result">
+            <p class="result"></p>
+          </div>
+          <div class="play-again">
+            <center><button onclick="goBack();">Play Again</button></center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rules">
+      <div class="rules-box">
+        <h1>Rock-Paper-Scissors Rules</h1>
+
+        <h2>Objective:</h2>
+        <p>
+          The goal of Rock-Paper-Scissors is to select an option that defeats
+          the computer's choice based on the following rules:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Rock crushes Scissors:</strong> If you choose Rock and the
+            computer chooses Scissors, you win!
+          </li>
+          <li>
+            <strong>Scissors cuts Paper:</strong> If you choose Scissors and the
+            computer chooses Paper, you win!
+          </li>
+          <li>
+            <strong>Paper covers Rock:</strong> If you choose Paper and the
+            computer chooses Rock, you win!
+          </li>
+        </ul>
+
+        <h2>How to Play:</h2>
+        <ol>
+          <li>Select either Rock, Paper, or Scissors.</li>
+          <li>The computer will randomly select one of the three options.</li>
+          <li>The winner is determined based on the rules listed above.</li>
+          <li>
+            If both you and the computer choose the same option, it's a tie, and
+            the round is replayed.
+          </li>
+        </ol>
+        <center>
+          <button class="Exit-btn" onclick="gorulesBack()">Back</button>
+        </center>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
