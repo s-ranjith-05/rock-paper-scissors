@@ -149,7 +149,7 @@ body{
     background-color: rgb(85, 85, 190);
 }
 
-@media (max-device-width:812px){
+@media (max-device-width: 992px){
     .title {
         margin-top: 15px;
         border: 4px solid white;
@@ -211,7 +211,7 @@ body{
     }
     .rules-button button{
         position:fixed;
-        top:740px;
+        top:690px;
         left:270px;
         padding: 10px;
         font-size: 1.5em;
