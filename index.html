@@ -10,6 +10,12 @@
     <div class="title">
       <p>Rock Paper Scissors</p>
       <p class="score-box">Score: <span class="score-card">0</span></p>
+      <button
+        class="reset-btn"
+        onclick="resetscore(); localStorage.removeItem('message');"
+      >
+        Reset Score
+      </button>
     </div>
     <div class="play-icons">
       <button class="play-icon-btn" onclick="result('Rock'); popup();">

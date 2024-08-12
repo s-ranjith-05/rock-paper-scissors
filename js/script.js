@@ -83,6 +83,10 @@ function result(value){
     scoreOutput.innerText=score.win;
 }
 result();
+function resetscore(){
+    score.win=0;    
+    window.location.reload();
+}
 function popup(){
     var popup=document.querySelector(".pop-up-box-container");
     popup.style.display="block";

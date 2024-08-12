@@ -27,6 +27,16 @@ body{
     color: rgb(85, 85, 190);
     border-radius: 10px;
 }
+.reset-btn{
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.0em;
+    cursor: pointer;
+    color: rgb(85, 85, 190);
+    background-color:white ;
+    font-weight: bold;
+}
 .play-icons{
     display: flex;
     flex-direction: row;
