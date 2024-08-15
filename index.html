@@ -17,20 +17,38 @@
         Reset Score
       </button>
     </div>
+    <div class="reset-score-msg">
+      <p>Are you sure about resetting the score?</p>
+      <button class="sure">Sure</button>
+      <button class="back">Back</button>
+    </div>
     <div class="play-icons">
-      <button class="play-icon-btn" onclick="result('Rock'); popup();">
+      <button class="play-icon-btn js-rock" onclick="resultfind('Rock'); popup();">
         <img src="images/Rock.png" alt="" />
       </button>
-      <button class="play-icon-btn" onclick="result('Paper'); popup();">
+      <button class="play-icon-btn js-paper" onclick="resultfind('Paper'); popup();">
         <img src="images/Paper.png" alt="" />
       </button>
-      <button class="play-icon-btn" onclick="result('Scissors'); popup();">
+      <button class="play-icon-btn js-scissors" onclick="resultfind('Scissors'); popup();">
         <img src="images/Scissors.png" alt="" />
       </button>
     </div>
     <div class="rules-button">
       <button onclick="rulespopup()">Rules</button>
     </div>
+    <div class="autoplay-button">
+      <button class="auto-play">Auto Play</button>
+    </div>
+      
+        <div class="autoplay-box">
+          <div class="autoplay-content"></div>
+          <div class="msg-result">
+            <p class="autoplay-result"></p>
+          </div>
+        </div>
+      
+    
+
     <div class="pop-up-box-container">
       <div class="pop-up-box">
         <div class="pop-up-message">

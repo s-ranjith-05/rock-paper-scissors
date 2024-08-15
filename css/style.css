@@ -20,12 +20,14 @@ body{
     padding-left:20px ;
     padding-right: 20px;
     color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .score-box{
     background-color: white;
     padding: 15px;
     color: rgb(85, 85, 190);
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .reset-btn{
     border: none;
@@ -36,6 +38,27 @@ body{
     color: rgb(85, 85, 190);
     background-color:white ;
     font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.reset-score-msg{
+    width:fit-content;
+    height: fit-content;
+    background-color: rgb(118, 118, 189) ;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    left:600px;
+    top: 20px;
+    display: none;
+}
+.reset-score-msg button{
+    padding: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: transparent;
+    cursor: pointer;
 }
 .play-icons{
     display: flex;
@@ -44,6 +67,7 @@ body{
     justify-content: space-around;
     align-items: center;
     margin-top: 70px;
+    
 }
 .play-icons img{
     width: 200px;
@@ -55,6 +79,7 @@ body{
     border-radius: 50%;
     padding: 20px;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .rules-button button{
     position: fixed;
@@ -65,7 +90,45 @@ body{
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
+}
+.autoplay-button button{
+    position: fixed;
+    top: 650px;
+    left: 100px;
+    padding: 10px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.autoplay-box{
+    width: 192px;
+    height: fit-content;
+    margin: 30px auto;
+    display: none;
+    background-color: rgb(118, 118, 189) ;
+   padding-left: 30px;
+   padding-top: 10px;
+   border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.autoplay-content img{
+    width: 50px;
+    height: 50px;
+}
+.autoplay-content button{
+    background: none;
+    border: 2px solid white;
+    border-radius:50%;
+    padding: 10px;
+    margin-right: 10px;
+}
+.autoplay-result{
+    margin-left: 80px;
 }
 .pop-up-box-container{
     background-color:rgb(85, 85, 190);
@@ -77,6 +140,7 @@ body{
     left: 0;
     z-index:1;
     display: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .pop-up-box{
     margin: 150px auto;
@@ -252,6 +316,36 @@ body{
     }
     h1 {
         font-size: 1.6em;
+    }
+    .autoplay-button button {
+        position:fixed;
+        top:690px;
+        left:30px;
+        padding: 10px;
+        font-size: 1.5em;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .autoplay-box {
+        width: 192px;
+        height: fit-content;
+        margin: 30px auto;
+        align-items: center;
+        justify-content: center;
+        padding-left: 30px;
+    }
+    .reset-score-msg {
+        width: fit-content;
+        height: fit-content;
+        background-color: rgb(118, 118, 189);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        position: absolute;
+        left: 45px;
+        top: 350px;
     }
     
 }
